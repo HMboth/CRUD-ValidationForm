@@ -48,9 +48,9 @@ function ProductForm() {
   };
 
   return (
-    <div className="container mt-5">
-      <h2>{isEditMode ? 'Edit Product' : 'Add New Product'}</h2>
-      <Form onSubmit={handleSubmit}>
+    <div className="container mt-5 w-50">
+      <h2 className='text-center'>{isEditMode ? 'EDIT PRODUCT' : 'ADD NEW PRODUCT'}</h2>
+      <Form onSubmit={handleSubmit} className='w-100'>
         <Form.Group className="mb-3">
           <Form.Label>Label</Form.Label>
           <Form.Control
@@ -95,9 +95,11 @@ function ProductForm() {
             required
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <div className='text-center'>
+        <Button variant="success" type="submit" className="px-5">
           {isEditMode ? 'Save Changes' : 'Add Product'}
         </Button>
+        </div>
       </Form>
     </div>
   );

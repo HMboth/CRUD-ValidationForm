@@ -16,7 +16,7 @@ function ListProducts() {
     <Container className="mt-5">
       <h2 className='text-center mb-5'>PRODUCT LIST</h2>
       <Table striped bordered hover responsive>
-        <thead>
+        <thead className='text-center'>
           <tr>
             <th>ID</th>
             <th>Label</th>
@@ -55,7 +55,7 @@ function ListProducts() {
         </tbody>
       </Table>
       <div className="text-center">
-        <Button as={Link} to="/add" variant="primary">Add Product</Button>
+        <Button as={Link} to="/add" variant="primary" className='px-5'>Add Product</Button>
       </div>
     </Container>
   );

@@ -1,7 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
 import { Link, useLocation } from 'react-router-dom';
 import { Form, FormControl, Button } from 'react-bootstrap';
-import { MdManageSearch } from "react-icons/md";
+import { ImSearch } from "react-icons/im";
 
 function Navbar() {
   const location = useLocation();
@@ -28,7 +28,7 @@ function Navbar() {
         <div>
           <Form inline className="d-flex" style={{position:'absolute', right:0, marginRight:'30px'}}>
             <FormControl type="text" placeholder="Search Products" className="" />
-            <Button variant="success"><MdManageSearch className='fs-5'/></Button>
+            <Button variant="dark"><ImSearch /></Button>
           </Form>
         </div>
       )}

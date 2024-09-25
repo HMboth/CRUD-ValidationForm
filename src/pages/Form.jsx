@@ -218,7 +218,7 @@ function FormApp() {
         </Form.Group>
 
         <div className="text-center">
-          <Button variant="primary" type="submit" className="px-5">
+          <Button variant="sucess" type="submit" className="px-5">
             Submit
           </Button>
         </div>
