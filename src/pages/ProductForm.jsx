@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ProductsContext } from '../context/ProductsContext';
 import { Button, Form } from 'react-bootstrap';
-import { faker } from '@faker-js/faker'; 
+import { faker } from '@faker-js/faker';
 
 function ProductForm() {
   const { products, dispatch } = useContext(ProductsContext);
@@ -39,12 +39,12 @@ function ProductForm() {
       dispatch({ type: 'EDIT_PRODUCT', payload: formData });
     } else {
       const newProduct = {
-        id: faker.datatype.uuid(),
+        id: faker.datatype.uuid(), 
         ...formData
       };
       dispatch({ type: 'ADD_PRODUCT', payload: newProduct });
     }
-    navigate('/');
+    navigate('/List-Products'); 
   };
 
   return (

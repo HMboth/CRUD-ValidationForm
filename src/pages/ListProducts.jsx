@@ -14,7 +14,7 @@ function ListProducts() {
 
   return (
     <Container className="mt-5">
-      <h2 className='text-center'>Product List</h2>
+      <h2 className='text-center mb-5'>PRODUCT LIST</h2>
       <Table striped bordered hover responsive>
         <thead>
           <tr>
